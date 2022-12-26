@@ -1,0 +1,262 @@
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+@media (max-width: 750px) {
+    .btn {
+        font-size:11px;
+        padding:4px 6px;
+    }
+}
+
+@media (min-width: 750px) {
+    h1 {
+        font-size: 63px;
+    }
+    .hero-text {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 650px) {
+    .rounded-circle {
+        display: none;
+    }
+    .hero-text {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 650px) and (max-width: 1000px) {
+    .rounded-circle {
+        width: 200px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .hero-text {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .rounded-circle {
+        width: 300px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+    .phone-btn::after {
+        content: "📞"
+    }
+    .route-btn::after {
+        content: "🗺️"
+    }
+}
+
+@media (min-width: 600px) {
+    .phone-btn::after {
+        content: "Anrufen 📞"
+    }
+    .route-btn::after {
+        content: "Route 🗺️"
+    }
+}
+
+
+body {
+    font-family:'Roboto';
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h4 {
+    color: snow;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+/* NAVIGATION - START */
+
+.navbar {
+    margin-bottom: 0%;
+    padding-top: 0%;
+}
+
+nav {
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.circle-logo-bg {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/logo/bg.svg");
+    background-size: cover;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.circle-logo-bg.img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.navbar-text {
+    font-size: large;
+}
+
+.navbar-toggler {
+    transition: all 0.3s ease-in-out;
+}
+
+/* NAVIGATION - END */
+
+p.site-title {
+    font-family:'Roboto';
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+p.site-subtitle {
+    font-family:'Roboto';
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+img {
+    display: block;
+}
+
+/* header {
+    height: 662px;
+} */
+
+.hero {
+    position: relative;
+    background-color: snow;
+    background-size:cover;
+    background-position:50%;
+    min-height:500px;
+    height:500px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.hero img {
+    min-height: inherit;
+    background-size: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50% );
+    font-family: 'IBM Plex Sans','sans-serif';
+    font-weight: 100;
+    text-align: center;
+    color: snow;
+    text-shadow: 2px 2px 3px #000000;
+    line-height: 64px;
+}
+
+.container-fluid {
+    box-shadow: 0px 3px 7px -8px #000000 inset;
+}
+
+.content-caption {
+    font-family: 'Roboto','sans-serif';
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.content-text {
+    font-family: 'Roboto','sans-serif';
+    font-size: 20px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+/* FOOTER - START */
+
+footer {
+    display: block;
+    background-color: #293133;
+    min-height: 150px;
+    width: 100%;
+    
+}
+
+p.footer {
+    color: snow;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+ul.footer {
+    margin-left: -40px;
+}
+
+li.footer {
+    display: inline;
+    padding: 0;
+    margin: 1em;
+    list-style-type: none;
+}
+
+a.footer {
+    color: snow;
+    /* padding: .5em; */
+    /* margin: .5em; */
+}
+
+img.footer {
+    display: inline-block;
+    width: 20%;
+}
+
+/* FOOTER - END */
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col-sm-4 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+  
+#wrapper {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+/* .img-wrapper {
+    height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+} */
