@@ -265,3 +265,151 @@ img.footer {
     justify-content:center;
     text-align:center;
 } */
+
+
+.route {
+    position: relative;
+    background-color: snow;
+    background-size:cover;
+    background-position:50%;
+    min-height:500px;
+    height:500px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    overflow:hidden;
+}
+
+.route-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    background: url('../img/route/route_map_10.jpg');
+    background-size: cover;
+    background-position: center center;
+    /* width: 1623px; */
+    height: 765px;
+    position: relative;
+}
+
+.route-area {
+    display: block;
+    height: 382px;
+    opacity: 0;
+    transition: all .2s ease;
+    position: relative;
+    z-index: 2;
+    -moz-box-shadow: 0 0 20px #000 inset;
+    -webkit-box-shadow: 0 0 20px #000 inset;
+    box-shadow: 0 0 150px -70px #000 inset;
+    border-radius: 50px;
+    
+}
+
+#route-area1,
+#route-area2,
+#route-area3,
+#route-area4 {
+    background-color: transparent;
+}
+
+/* #route-area2 {
+    background-color: transparent;
+}
+
+#route-area3 {
+    background-color: transparent;
+}
+
+#route-area4 {
+    background-color: transparent;
+} */
+
+#route-area1:hover,
+#route-area2:hover,
+#route-area3:hover,
+#route-area4:hover {
+    opacity: 1;
+}
+
+
+#bg-image {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    transition: all .6s ease;
+    background-position: center center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.route-area:hover ~ #bg-image {
+    opacity: 1;
+}
+
+#route-area1:hover ~ #bg-image {
+    background-image: url('../img/route/route_tram.png');
+}
+#route-area2:hover ~ #bg-image {
+    background-image: url('../img/route/route_nst.png');
+}
+#route-area3:hover ~ #bg-image {
+    background-image: url('../img/route/route_schop_weg.png');
+}
+#route-area4:hover ~ #bg-image {
+    background-image: url('../img/route/route_kfg.png');
+}
+
+a.fill-div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltip-text {
+    visibility: hidden;
+    width: 120 px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 20px -5px #000;
+
+    /* tooltip text position */
+    position: absolute;
+    z-index: 3;
+    bottom: 100%;
+    left: 20%;
+    margin-left: -60px;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text by hover */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
