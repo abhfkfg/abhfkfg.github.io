@@ -77,21 +77,51 @@
             <div class="content-text bg-1">
                 <div class="container py-4 center">
                     <form id="contactForm" action="https://formsubmit.co/3ef7c91cfc06d7058ad340f05ea52950" method="POST">
-                        <input type="hidden" name="_subject" value="Eine Anfrage">
+                        <input type="hidden" name="_subject" value="Allgemeine Anfrage">
+                        <!-- Company name input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="company">Firmenname</label>
+                            <input class="form-control" id="company" type="text" name="Firmenname" placeholder="Firmenname">
+                        </div>
                         <!-- Name input -->
                         <div class="mb-3">
                             <label class="form-label" for="name">Name</label>
-                            <input class="form-control" id="name" type="text" name="name" placeholder="Name" required>
+                            <input class="form-control" id="name" type="text" name="Name" placeholder="Name" required>
+                        </div>
+                        <!-- Address input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="address">Anschrift</label>
+                            <input class="form-control" id="address" type="text" name="Anschrift" placeholder="Anschrift (Straße - Hausnummer)" required>
+                        </div>
+                        <!-- postcode input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="postcode">Postleitzahl</label>
+                            <input class="form-control" id="postcode" type="text" name="PLZ" placeholder="PLZ" required>
+                        </div>
+                        <!-- place input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="place">Ort</label>
+                            <input class="form-control" id="place" type="text" name="Ort" placeholder="Ort" required>
                         </div>
                         <!-- Email address input -->
                         <div class="mb-3">
-                            <label class="form-label" for="message">E-Mail-Adresse</label>
-                            <input class="form-control" id="email" type="email" name="email" placeholder="E-Mail-Adresse" required>
+                            <label class="form-label" for="email">E-Mail-Adresse</label>
+                            <input class="form-control" id="email" type="email" name="Email" placeholder="E-Mail-Adresse" required>
+                        </div>
+                        <!-- Phone number input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="phone">Telefonnummer</label>
+                            <input class="form-control" id="phone" type="text" name="Telefon" placeholder="Telefonnummer">
+                        </div>
+                        <!-- Number of persons input -->
+                        <div class="mb-3">
+                            <label class="form-label" for="persons">Personenanzahl</label>
+                            <input class="form-control" id="persons" type="text" name="Personen" placeholder="Personenanzahl (z.B. 'ca. 50 Personen')" required>
                         </div>
                         <!-- Message input -->
                         <div class="mb-3">
                             <label class="form-label" for="message">Nachricht</label>
-                            <textarea class="form-control" id="message" type="text" name="message" placeholder="Nachricht" style="height: 10rem;" required></textarea>
+                            <textarea class="form-control" id="message" type="text" name="Nachricht" placeholder="Nachricht" style="height: 10rem;" required></textarea>
                         </div>
                         <!-- Form submit button -->
                         <div class="d-grid">
@@ -118,9 +148,9 @@
 
             <!-- Right -->
             <div>
-                <!-- <a href="" class="me-4 text-reset">
-                <i class="fab fa-google"></i>
-                </a> -->
+                <a href="https://g.page/alter-bahnhof-events" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
                 <a href="https://fb.me/alter.bahnhof.events" class="me-4 text-reset" style="text-decoration: none">
                     <i class="fab fa-facebook-f"></i>
                 </a>
