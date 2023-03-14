@@ -76,41 +76,39 @@
         <main>
             <div class="content-text bg-1">
                 <div class="container py-4 center">
-                    <form id="contactForm" action="https://formsubmit.co/3ef7c91cfc06d7058ad340f05ea52950" method="POST">
+                    <h1>Kontaktformular</h1>
+                    <h2>Wir freuen uns auf Ihre Anfrage!</h2>
+                    <br/><br/>
+                    <form id="contactForm" action="https://formsubmit.co/3ef7c91cfc06d7058ad340f05ea52950" method="POST" class="form-horizontal">
                         <input type="hidden" name="_subject" value="Allgemeine Anfrage">
-                        <!-- Company name input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="company">Firmenname</label>
-                            <input class="form-control" id="company" type="text" name="Firmenname" placeholder="Firmenname">
+                        <label class="form-label">Name</label>
+                        <div class="input-group mb-3">
+                            <!-- Name input -->
+                            <span class="input-group-text">Name</span>
+                            <input class="form-control" id="name" type="text" name="Name" placeholder="Ihr Name" required>
+                            <!-- Company name input -->
+                            <span class="input-group-text">Firmenname</span>
+                            <input class="form-control" id="company" type="text" name="Firmenname" placeholder="(optional)">
                         </div>
-                        <!-- Name input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="name">Name</label>
-                            <input class="form-control" id="name" type="text" name="Name" placeholder="Name" required>
-                        </div>
-                        <!-- Address input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="address">Anschrift</label>
-                            <input class="form-control" id="address" type="text" name="Anschrift" placeholder="Anschrift (Straße - Hausnummer)" required>
-                        </div>
-                        <!-- postcode input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="postcode">Postleitzahl</label>
-                            <input class="form-control" id="postcode" type="text" name="PLZ" placeholder="PLZ" required>
-                        </div>
-                        <!-- place input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="place">Ort</label>
+                        <label class="form-label">Adresse</label>
+                        <div class="input-group mb-3">
+                            <!-- Address input -->
+                            <span class="input-group-text">Str., Nr.:</span>
+                            <input class="form-control" id="street" type="text" name="Straße" placeholder="Straße, Hausnummer" required>
+                            <!-- postcode input -->
+                            <span class="input-group-text">PLZ</span>
+                            <input class="form-control" id="postcode" type="text" name="PLZ" placeholder="Postleitzahl" required>
+                            <!-- place input -->
+                            <span class="input-group-text">Ort:</span>
                             <input class="form-control" id="place" type="text" name="Ort" placeholder="Ort" required>
                         </div>
-                        <!-- Email address input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="email">E-Mail-Adresse</label>
-                            <input class="form-control" id="email" type="email" name="Email" placeholder="E-Mail-Adresse" required>
-                        </div>
-                        <!-- Phone number input -->
-                        <div class="mb-3">
-                            <label class="form-label" for="phone">Telefonnummer</label>
+                        <label class="form-label">Kontakt</label>
+                        <div class="input-group mb-3">
+                            <!-- Email address input -->
+                            <span class="input-group-text">Mail:</span>
+                            <input class="form-control" id="email" type="email" name="Email" placeholder="Ihre E-Mail-Adresse" required>
+                            <!-- Phone number input -->
+                            <span class="input-group-text">Tel.:</span>
                             <input class="form-control" id="phone" type="text" name="Telefon" placeholder="Telefonnummer">
                         </div>
                         <!-- Number of persons input -->
@@ -121,7 +119,7 @@
                         <!-- Message input -->
                         <div class="mb-3">
                             <label class="form-label" for="message">Nachricht</label>
-                            <textarea class="form-control" id="message" type="text" name="Nachricht" placeholder="Nachricht" style="height: 10rem;" required></textarea>
+                            <textarea class="form-control" id="message" type="text" name="Nachricht" placeholder="Schreiben Sie uns eine Nachricht" style="height: 10rem;" required></textarea>
                         </div>
                         <!-- Form submit button -->
                         <div class="d-grid">
