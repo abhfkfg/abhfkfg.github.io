@@ -148,27 +148,16 @@ img {
     display: block;
 }
 
-/* header {
-    height: 662px;
-} */
-
 .hero {
-    position: relative;
-    background-color: snow;
-    background-size:cover;
-    background-position:50%;
-    min-height:500px;
-    height:500px;
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    overflow:hidden;
-}
-
-.hero img {
-    min-height: inherit;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../img/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
 .hero-text {
